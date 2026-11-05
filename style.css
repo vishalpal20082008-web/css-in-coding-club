@@ -1,0 +1,157 @@
+/* CSS Variables */
+:root {
+    --primary: #2563eb;
+    --secondary: #0f172a;
+    --background: #f1f5f9;
+    --card-bg: #ffffff;
+    --text: #334155;
+    --spacing: 20px;
+    --radius: 12px;
+}
+
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* Element Selector */
+h1 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--secondary);
+    margin-bottom: 15px;
+}
+
+/* ID Selector */
+#hero {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#hero p {
+    font-size: 18px;
+}
+
+/* Navigation */
+nav {
+    background: var(--secondary);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* Class Selector */
+.card {
+    background: var(--card-bg);
+    padding: var(--spacing);
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* Events Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #e2e8f0;
+}
+
+th {
+    background: var(--primary);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+tfoot {
+    background: #dbeafe;
+    font-weight: bold;
+}
+
+/* Registration Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: 500;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid var(--primary);
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Footer */
+footer {
+    background: var(--secondary);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
